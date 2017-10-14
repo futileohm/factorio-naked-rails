@@ -1,11 +1,9 @@
 {
     "name": "naked-rails",
-    "version": "0.9",
+    "version": "1.0.0",
     "title": "Naked Rails",
     "author": "futileohm",
-    "contact": "",
     "homepage": "",
     "factorio_version": "0.15",
-    "dependencies": ["base >= 0.15"],
-    "description": "Add items to convert standard rails to naked rails, removing the gravel and the sleepers."
+    "description": "Convert standard rails to naked rails, removing the gravel and/or sleepers. Can also change rails to rail remnants for a destroyed look."
 }

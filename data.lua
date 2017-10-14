@@ -187,9 +187,11 @@ for _, id in ipairs(curved_picture_ids) do
 end
 
 table.insert(hash, ptype)
-
-
 data:extend(hash)
+
+--
+-- Set up the selection items and recipies to change rails to different types
+--
 
 data:extend({
 	{
