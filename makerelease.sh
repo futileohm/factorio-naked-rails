@@ -10,4 +10,4 @@ modver=`cat info.json|jq -r .version`
 git tag "$modver"
 
 # Prepare zip for Factorio native use and mod portal
-git archive --prefix "${modname}_$modver/" -o "${modname}_$modver.zip" HEAD
+git archive --prefix "${modname}_$modver/" -o "release/${modname}_$modver.zip" HEAD
