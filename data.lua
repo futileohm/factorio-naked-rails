@@ -27,8 +27,8 @@ curved_picture_ids =
 }
 
 -- Make remnants live forever so that decorative remnants don't disappear on us
-data.raw["rail-remnants"]["straight-rail-remnants"].time_to_live = 0
-data.raw["rail-remnants"]["curved-rail-remnants"].time_to_live = 0
+data.raw["rail-remnants"]["straight-rail-remnants"].time_before_removed = 1073741824
+data.raw["rail-remnants"]["curved-rail-remnants"].time_before_removed = 1073741824
 
 --
 -- naked-rail
@@ -53,8 +53,8 @@ ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails__/
 
 for _, id in ipairs(straight_picture_ids) do
 	for _, element in ipairs(naked_subelements) do
-		ptype.pictures[id[1]][element].sheet.filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].sheet.hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -71,8 +71,8 @@ ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails__/
 
 for _, id in ipairs(curved_picture_ids) do
 	for _, element in ipairs(naked_subelements) do
-		ptype.pictures[id[1]][element].sheet.filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].sheet.hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -88,8 +88,8 @@ ptype.name = "naked-straight-rail-remnants"
 
 for _, id in ipairs(straight_picture_ids) do
 	for _, element in ipairs(naked_subelements) do
-		ptype.pictures[id[1]][element].sheet.filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].sheet.hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -101,8 +101,8 @@ ptype.name = "naked-curved-rail-remnants"
 
 for _, id in ipairs(curved_picture_ids) do
 	for _, element in ipairs(naked_subelements) do
-		ptype.pictures[id[1]][element].sheet.filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].sheet.hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -133,8 +133,8 @@ ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails__/
 
 for _, id in ipairs(straight_picture_ids) do
 	for _, element in ipairs(sleepy_subelements) do
-		ptype.pictures[id[1]][element].sheet.filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].sheet.hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -151,8 +151,8 @@ ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails__/
 
 for _, id in ipairs(curved_picture_ids) do
 	for _, element in ipairs(sleepy_subelements) do
-		ptype.pictures[id[1]][element].sheet.filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].sheet.hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -168,8 +168,8 @@ ptype.name = "naked-sleepy-straight-rail-remnants"
 
 for _, id in ipairs(straight_picture_ids) do
 	for _, element in ipairs(sleepy_subelements) do
-		ptype.pictures[id[1]][element].sheet.filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].sheet.hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -181,8 +181,8 @@ ptype.name = "naked-sleepy-curved-rail-remnants"
 
 for _, id in ipairs(curved_picture_ids) do
 	for _, element in ipairs(sleepy_subelements) do
-		ptype.pictures[id[1]][element].sheet.filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].sheet.hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -218,7 +218,8 @@ data:extend({
 				scale = 0.3,
 				shift = { 6, -6 }
 			}
-		}
+		},
+		icon_size=32
 	},
 	{
 		type = "recipe",
@@ -247,7 +248,8 @@ data:extend({
 				icon = "__base__/graphics/icons/rail.png",
 				scale = 0.75
 			}
-		}
+		},
+		icon_size=32
 	},
 	{
 		type = "recipe",
@@ -277,7 +279,8 @@ data:extend({
 				scale = 0.75,
 				tint = { r = 1, g = 1, b = 1, a = 0.5 }
 			}
-		}
+		},
+		icon_size=32
 	},
 	{
 		type = "recipe",
@@ -306,7 +309,8 @@ data:extend({
 				icon = "__base__/graphics/icons/straight-rail-remnants.png",
 				scale = 0.7
 			}
-		}
+		},
+		icon_size=32
 	},
 	{
 		type = "recipe",
