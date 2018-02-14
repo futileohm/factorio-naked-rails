@@ -219,7 +219,8 @@ data:extend({
 				shift = { 6, -6 }
 			}
 		},
-		icon_size=32
+		icon_size=32,
+		show_in_library = true
 	},
 	{
 		type = "recipe",
@@ -235,7 +236,7 @@ data:extend({
 		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
     	stack_size = 1,
-		order = "a[train-system]-x[naked-rails-sleepify]",
+		order = "a[train-system]-b[rail-c]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 0.5, g = 0.5, b = 0.5, a = 0.2 },
 		selection_mode = { "buildable-type" },
@@ -249,7 +250,8 @@ data:extend({
 				scale = 0.75
 			}
 		},
-		icon_size=32
+		icon_size=32,
+		show_in_library = true
 	},
 	{
 		type = "recipe",
@@ -265,7 +267,7 @@ data:extend({
 		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
     	stack_size = 1,
-		order = "a[train-system]-w[naked-rails-nakedify]",
+		order = "a[train-system]-b[rail-a]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 0.5, g = 0.5, b = 0.5, a = 0.2 },
 		selection_mode = { "buildable-type" },
@@ -280,7 +282,8 @@ data:extend({
 				tint = { r = 1, g = 1, b = 1, a = 0.5 }
 			}
 		},
-		icon_size=32
+		icon_size=32,
+		show_in_library = true
 	},
 	{
 		type = "recipe",
@@ -296,7 +299,7 @@ data:extend({
 		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
     	stack_size = 1,
-		order = "a[train-system]-z[naked-rails-remnantify]",
+		order = "a[train-system]-b[rail-d]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 1, g = 0, b = 0 },
 		selection_mode = { "buildable-type" },
@@ -310,7 +313,8 @@ data:extend({
 				scale = 0.7
 			}
 		},
-		icon_size=32
+		icon_size=32,
+		show_in_library = true
 	},
 	{
 		type = "recipe",
