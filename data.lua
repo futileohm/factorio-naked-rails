@@ -197,9 +197,8 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-stoneify",
-		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
-    	stack_size = 1,
+    stack_size = 1,
 		order = "a[train-system]-y[naked-rails-stoneify]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 0.5, g = 0.5, b = 0.5, a = 0.2 },
@@ -232,9 +231,8 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-sleepify",
-		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
-    	stack_size = 1,
+    stack_size = 1,
 		order = "a[train-system]-x[naked-rails-sleepify]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 0.5, g = 0.5, b = 0.5, a = 0.2 },
@@ -262,9 +260,8 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-nakedify",
-		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
-    	stack_size = 1,
+    stack_size = 1,
 		order = "a[train-system]-w[naked-rails-nakedify]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 0.5, g = 0.5, b = 0.5, a = 0.2 },
@@ -293,9 +290,8 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-remnantify",
-		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
-    	stack_size = 1,
+    stack_size = 1,
 		order = "a[train-system]-z[naked-rails-remnantify]",
 		selection_color = { r = 1, g = 1, b = 1, a = 0.2 },
 		alt_selection_color = { r = 1, g = 0, b = 0 },
