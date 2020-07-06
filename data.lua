@@ -1,4 +1,3 @@
-
 hash = {}
 
 naked_subelements = {"ties", "stone_path", "stone_path_background"}
@@ -47,14 +46,15 @@ table.insert(hash, ptype)
 ptype = table.deepcopy(data.raw["straight-rail"]["straight-rail"])
 ptype.name = "naked-straight-rail"
 ptype.minable.result = "rail"
+ptype.placeable_by = { item = "rail", count = 1 }
 
-ptype.pictures["rail_endings"].sheets[1].filename = "__naked-rails__/graphics/rail-endings-transparent.png"
-ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails__/graphics/hr-rail-endings-transparent.png"
+ptype.pictures["rail_endings"].sheets[1].filename = "__naked-rails_se__/graphics/rail-endings-transparent.png"
+ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails_se__/graphics/hr-rail-endings-transparent.png"
 
 for _, id in ipairs(straight_picture_ids) do
 	for _, element in ipairs(naked_subelements) do
-		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails_se__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails_se__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -64,15 +64,15 @@ table.insert(hash, ptype)
 ptype = table.deepcopy(data.raw["curved-rail"]["curved-rail"])
 ptype.name = "naked-curved-rail"
 ptype.minable.result = "rail"
-ptype.placeable_by.item = "rail"
+ptype.placeable_by = { item = "rail", count = 4 }
 
-ptype.pictures["rail_endings"].sheets[1].filename = "__naked-rails__/graphics/rail-endings-transparent.png"
-ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails__/graphics/hr-rail-endings-transparent.png"
+ptype.pictures["rail_endings"].sheets[1].filename = "__naked-rails_se__/graphics/rail-endings-transparent.png"
+ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails_se__/graphics/hr-rail-endings-transparent.png"
 
 for _, id in ipairs(curved_picture_ids) do
 	for _, element in ipairs(naked_subelements) do
-		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails_se__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails_se__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -85,11 +85,12 @@ table.insert(hash, ptype)
 -- straight-rail
 ptype = table.deepcopy(data.raw["rail-remnants"]["straight-rail-remnants"])
 ptype.name = "naked-straight-rail-remnants"
+ptype.placeable_by = { item = "rail", count = 1 }
 
 for _, id in ipairs(straight_picture_ids) do
 	for _, element in ipairs(naked_subelements) do
-		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails_se__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails_se__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -98,11 +99,12 @@ table.insert(hash, ptype)
 -- curved-rail
 ptype = table.deepcopy(data.raw["rail-remnants"]["curved-rail-remnants"])
 ptype.name = "naked-curved-rail-remnants"
+ptype.placeable_by = { item = "rail", count = 4 }
 
 for _, id in ipairs(curved_picture_ids) do
 	for _, element in ipairs(naked_subelements) do
-		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails_se__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails_se__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -127,14 +129,15 @@ table.insert(hash, ptype)
 ptype = table.deepcopy(data.raw["straight-rail"]["straight-rail"])
 ptype.name = "naked-sleepy-straight-rail"
 ptype.minable.result = "rail"
+ptype.placeable_by = { item = "rail", count = 1 }
 
-ptype.pictures["rail_endings"].sheets[1].filename = "__naked-rails__/graphics/rail-endings-transparent.png"
-ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails__/graphics/hr-rail-endings-transparent.png"
+ptype.pictures["rail_endings"].sheets[1].filename = "__naked-rails_se__/graphics/rail-endings-transparent.png"
+ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails_se__/graphics/hr-rail-endings-transparent.png"
 
 for _, id in ipairs(straight_picture_ids) do
 	for _, element in ipairs(sleepy_subelements) do
-		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails_se__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails_se__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -144,15 +147,15 @@ table.insert(hash, ptype)
 ptype = table.deepcopy(data.raw["curved-rail"]["curved-rail"])
 ptype.name = "naked-sleepy-curved-rail"
 ptype.minable.result = "rail"
-ptype.placeable_by.item = "rail"
+ptype.placeable_by = { item = "rail", count = 4 }
 
-ptype.pictures["rail_endings"].sheets[1].filename = "__naked-rails__/graphics/rail-endings-transparent.png"
-ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails__/graphics/hr-rail-endings-transparent.png"
+ptype.pictures["rail_endings"].sheets[1].filename = "__naked-rails_se__/graphics/rail-endings-transparent.png"
+ptype.pictures["rail_endings"].sheets[1].hr_version.filename = "__naked-rails_se__/graphics/hr-rail-endings-transparent.png"
 
 for _, id in ipairs(curved_picture_ids) do
 	for _, element in ipairs(sleepy_subelements) do
-		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails_se__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails_se__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -165,11 +168,12 @@ table.insert(hash, ptype)
 -- straight-rail
 ptype = table.deepcopy(data.raw["rail-remnants"]["straight-rail-remnants"])
 ptype.name = "naked-sleepy-straight-rail-remnants"
+ptype.placeable_by = { item = "rail", count = 1 }
 
 for _, id in ipairs(straight_picture_ids) do
 	for _, element in ipairs(sleepy_subelements) do
-		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails_se__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails_se__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -178,11 +182,12 @@ table.insert(hash, ptype)
 -- curved-rail
 ptype = table.deepcopy(data.raw["rail-remnants"]["curved-rail-remnants"])
 ptype.name = "naked-sleepy-curved-rail-remnants"
+ptype.placeable_by = { item = "rail", count = 4 }
 
 for _, id in ipairs(curved_picture_ids) do
 	for _, element in ipairs(sleepy_subelements) do
-		ptype.pictures[id[1]][element].filename = string.format("__naked-rails__/graphics/%s-transparent.png", id[2])
-		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails__/graphics/hr-%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].filename = string.format("__naked-rails_se__/graphics/%s-transparent.png", id[2])
+		ptype.pictures[id[1]][element].hr_version.filename = string.format("__naked-rails_se__/graphics/hr-%s-transparent.png", id[2])
 	end
 end
 
@@ -197,7 +202,6 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-stoneify",
-		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
     	stack_size = 1,
 		order = "a[train-system]-y[naked-rails-stoneify]",
@@ -208,7 +212,7 @@ data:extend({
 		selection_cursor_box_type = "entity",
 	    alt_selection_cursor_box_type = "copy",
 		icons = {
-			{ icon = "__naked-rails__/graphics/naked-replacer-icon.png" },
+			{ icon = "__naked-rails_se__/graphics/naked-replacer-icon.png" },
 			{
 				icon = "__base__/graphics/icons/rail.png",
 				scale = 0.75
@@ -219,7 +223,7 @@ data:extend({
 				shift = { 6, -6 }
 			}
 		},
-		icon_size=32
+		icon_size = 32
 	},
 	{
 		type = "recipe",
@@ -232,7 +236,6 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-sleepify",
-		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
     	stack_size = 1,
 		order = "a[train-system]-x[naked-rails-sleepify]",
@@ -243,13 +246,13 @@ data:extend({
 		selection_cursor_box_type = "entity",
 	    alt_selection_cursor_box_type = "copy",
 	    icons = {
-			{ icon = "__naked-rails__/graphics/naked-replacer-icon.png" },
+			{ icon = "__naked-rails_se__/graphics/naked-replacer-icon.png" },
 			{
 				icon = "__base__/graphics/icons/rail.png",
 				scale = 0.75
 			}
 		},
-		icon_size=32
+		icon_size = 32
 	},
 	{
 		type = "recipe",
@@ -262,7 +265,6 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-nakedify",
-		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
     	stack_size = 1,
 		order = "a[train-system]-w[naked-rails-nakedify]",
@@ -273,14 +275,14 @@ data:extend({
 		selection_cursor_box_type = "entity",
 	    alt_selection_cursor_box_type = "copy",
 	    icons = {
-			{ icon = "__naked-rails__/graphics/naked-replacer-icon.png" },
+			{ icon = "__naked-rails_se__/graphics/naked-replacer-icon.png" },
 			{
-				icon = "__naked-rails__/graphics/naked-rails-icon.png",
+				icon = "__naked-rails_se__/graphics/naked-rails-icon.png",
 				scale = 0.75,
 				tint = { r = 1, g = 1, b = 1, a = 0.5 }
 			}
 		},
-		icon_size=32
+		icon_size = 32
 	},
 	{
 		type = "recipe",
@@ -293,7 +295,6 @@ data:extend({
 	{
 		type = "selection-tool",
 		name = "naked-rails-remnantify",
-		flags = { "goes-to-quickbar" },
 		subgroup = "transport",
     	stack_size = 1,
 		order = "a[train-system]-z[naked-rails-remnantify]",
@@ -304,13 +305,13 @@ data:extend({
 		selection_cursor_box_type = "entity",
 	    alt_selection_cursor_box_type = "not-allowed",
 	    icons = {
-			{ icon = "__naked-rails__/graphics/naked-replacer-icon.png" },
+			{ icon = "__naked-rails_se__/graphics/naked-replacer-icon.png" },
 			{
 				icon = "__base__/graphics/icons/straight-rail-remnants.png",
 				scale = 0.7
 			}
 		},
-		icon_size=32
+		icon_size = 32
 	},
 	{
 		type = "recipe",
